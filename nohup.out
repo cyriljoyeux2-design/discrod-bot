@@ -1,0 +1,13 @@
+[2025-11-10 23:29:31] [INFO    ] discord.client: logging in using static token
+[2025-11-10 23:29:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: dc5cac2ac2ecbb078b536f1c9175e538).
+[2025-11-10 23:29:34] [ERROR   ] discord.client: Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "C:\Users\cyril\AppData\Roaming\Python\Python313\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\cyril\discord-bot\bot_auto_message.py", line 21, in on_ready
+    print(f"\u2705 Connecté en tant que {bot.user}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
