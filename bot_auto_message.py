@@ -4,6 +4,9 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from datetime import datetime
 import pytz
 import os
+from keep_alive import keep_alive
+keep_alive()
+
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = 1437560433551872112  # 🧠 Remplace par l’ID du canal cible
