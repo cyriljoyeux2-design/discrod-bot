@@ -26,7 +26,7 @@ async def on_ready():
     print("🕓 Planificateur activé")
 
     # Planifie l’envoi du message chaque semaine
-    scheduler.add_job(send_weekly_message, "cron", day_of_week="fri", hour=9, minute=00)
+    scheduler.add_job(send_weekly_message, "cron", day_of_week="fri", hour=9, minute=35)
     print("📅 Tâche planifiée pour chaque vendredi à 9h00")
 
 async def send_weekly_message():
